@@ -1,10 +1,14 @@
 
 import './App.css'
+import Addtodo from './components/Addtodo'
+import ToDo from './components/ToDo'
 
 function App() {
 return(
   <>
-  <p className='text-2xl text-yellow-700 '> helloe</p>
+ <Addtodo/>
+ <ToDo/>
+
   </>
 )
 }
