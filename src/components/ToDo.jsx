@@ -7,14 +7,19 @@ const ToDo = () => {
     const  dispatch = useDispatch();
 
   return (
-    <div>
+    <div className=' '>
       {todo.map((todo => (<>
-        <li key ={todo.id}>
+      <div className='bg-orange-200 w-96 p-2 m-2 flex justify-between items-center rounded-lg'>
+        <li className='list-none'
+          key ={todo.id}>
             {todo.text}
         </li>
-        <button onClick={()=> dispatch(removeTodo(todo.id))}>X</button>
+        <button className='bg-cyan-200 text-xl rounded-md p-2 m-2'
+         onClick={()=> dispatch(removeTodo(todo.id))}>X</button>
+        </div>
         </>
       )))}
+      
     </div>
   )
 }

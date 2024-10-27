@@ -11,10 +11,13 @@ const Addtodo = () => {
         setInput('')
     }
   return (
-    <div>
-      <form onSubmit={handleTodo}>
-<input type='text'  placeholder='enter to do' value={input} onChange={(e)=> setInput(e.target.value)}/>
-<button type='submit'>Add</button>
+    <div className='flex items-center justify-center p-3'> 
+      <form  
+      onSubmit={handleTodo}>
+        <input  className='rounded-lg p-4 '
+        type='text'  placeholder='Enter to do' value={input} onChange={(e)=> setInput(e.target.value)}/>
+        <button className='m-2 p-2 rounded-xl bg-green-200'
+        type='submit'>Add</button>
       </form>
     </div>
   )
